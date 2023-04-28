@@ -71,8 +71,11 @@ function loadTasks(userId) {
         const numCompleted = tasks.filter(task => task.completed).length;
         const numTotal = tasks.length;
         taskSummary.textContent = `${numCompleted}/${numTotal} tasks completed`;
+
+        
       });
     })
+    
 }
 
 function markTaskDone(taskId, markDoneBtn, taskLi) {

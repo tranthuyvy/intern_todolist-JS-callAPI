@@ -1,10 +1,13 @@
+
 body {
   font-family: 'Times New Roman', Times, serif;
+  font-size: 15px;
   background-color: #fff;
 }
 
 .container {
   max-width: 700px;
+
   margin: 0 auto;
 }
 
@@ -28,7 +31,7 @@ li:before {
   display: inline-block;
   width: 30px;
   height: 30px;
-  margin-right: 10px;
+  margin-right: 5px;
   background-image: url("task-notes-icon.png");
   background-size: contain;
 }
@@ -38,7 +41,7 @@ li {
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 1rem;
-  border: 1px solid #037807;
+  border: 1px solid black;
 }
 
 li.completed::before {
@@ -46,7 +49,7 @@ li.completed::before {
 }
 
 #task-list li.completed {
-  text-decoration: line-through;
+  /* text-decoration: line-through; */
   color: gray;
 }
 
@@ -58,10 +61,25 @@ li.completed::before {
 button {
   margin-top: 1rem;
   padding: 0.5rem 1rem;
-  background-color: green;
+  background-color: red;
   color: #fff;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
 }
+
+button:hover{
+  background-color: green;
+}
+
+#logo{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin-right: 10px; 
+  background-image: url("logo.png");
+  background-size: contain;
+  margin-right: 20px;
+}
+
 
