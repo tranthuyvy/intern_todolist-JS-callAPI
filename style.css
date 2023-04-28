@@ -1,0 +1,67 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style: none;
+  overflow: auto;
+  max-height: 600px;
+  margin: 0;
+  padding: 0;
+}
+
+li:before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  background-image: url("task-notes-icon.png");
+  background-size: contain;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  border: 1px solid #037807;
+}
+
+li.completed::before {
+  display: none;
+}
+
+#task-list li.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+#task-list button[disabled] {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: green;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
